@@ -19,9 +19,10 @@ but this is easy to fix/remove.
 ## General Usage
 ```
 npm install -g @fatso83/check-commit-msg
-echo > .git/hooks/commit-msg << EOF
+echo << 'EOF' > .git/hooks/commit-msg 
 check-commit-msg $1
 EOF
+chmod +x .git/hooks/commit-msg  #make it executable
 ```
 
 ## Using with Husky

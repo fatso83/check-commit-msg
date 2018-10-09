@@ -1,0 +1,3 @@
+GH-637 Update design of ListView is a much too long headline. actually it is much longer than 80 characters. It should fail, I think
+
+Some failing line that is too long for the guidelines, 

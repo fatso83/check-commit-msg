@@ -1,0 +1,7 @@
+GH-637 Update design of ListView
+
+This is a suitable line length. In fact, it breaks before 70 chars.
+That makes it readable on all displays, for instance terminals,
+mobiles, GitHub, etc
+
+fixes #1234

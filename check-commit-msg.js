@@ -20,7 +20,7 @@ module.exports = function checkCommitMsg(commitMsg) {
     process.exit(0);
   }
 
-  if (!commitMsg.match(/^[a-zA-Z]{2,4}-\d{1,5} /)) {
+  if (!commitMsg.match(/^[a-zA-Z]{2,6}-\d{1,5} /)) {
     errors.push(
       'Commit messages should be prefixed with the github issue number, i.e. "GH-637 Update design of ListView"'
     );

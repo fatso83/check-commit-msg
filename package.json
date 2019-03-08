@@ -1,6 +1,6 @@
 {
   "name": "@fatso83/check-commit-msg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "bin": "./cli.js",
   "description": "Check if your commit message follows Chris Beam's \"Seven rules of a good commit message\"",
   "main": "cli.js",

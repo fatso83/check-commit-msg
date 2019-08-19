@@ -7,10 +7,12 @@
  *  - Put this in your package.json's script section:
  *      "commitmsg": "node -r '@fatso83/check-commit-msg/husky'"
  */
-const fs = require('fs');
-const filename = process.env['GIT_PARAMS'].split(' ')[0];
-const commitMsg = fs.readFileSync(filename).toString();
+const gitRoot = require("./git-root");
+const fs = require("fs");
+const filename = process.env["GIT_PARAMS"].split(" ")[0];
+const fullPath = filename.replace(".git", gitRoot);
+const commitMsg = fs.readFileSync(fullPath).toString();
 
-const checkCommitMsg = require('./check-commit-msg');
+const checkCommitMsg = require("./check-commit-msg");
 
 checkCommitMsg(commitMsg);

@@ -32,7 +32,7 @@ If you use `husky` in your NPM commit hooks
 ```
 Then add this to your package.json scripts' section:
 ```
-    "commitmsg": "node -e \"require('@fatso83/check-commit-msg/husky')\""
+    "commitmsg": "node -r '@fatso83/check-commit-msg/husky'"
 ```
 
 ## Improvements welcome

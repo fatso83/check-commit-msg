@@ -16,6 +16,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "debug": "^4.1.1",
+    "find-up": "^4.0.0",
+    "pkg-dir": "^4.2.0"
   }
 }

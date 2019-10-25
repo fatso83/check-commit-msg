@@ -1,6 +1,6 @@
 const pkgDir = require("pkg-dir");
 const findUp = require("find-up");
-const debug = require("debug")("check-commit-msg");
+const debug = require("debug")("check-commit-msg.git-root");
 
 debug("cwd: ", process.cwd());
 const rootOfScript = pkgDir.sync(__dirname); // start traversing up
